@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\CellAnalyzerOfficeAddinManifest.xml
+C:\Users\Gaurav Budhiraja\source\repos\ExcelAddIn\CellAnalyzerOfficeAddin\bin\Debug\CellAnalyzerOfficeAddin.debugapp
