@@ -4,3 +4,9 @@ D:\CellAnalyzer\CellAnalyzerSharedLibrary\obj\Debug\CellAnalyzerSharedLibrary.cs
 D:\CellAnalyzer\CellAnalyzerSharedLibrary\obj\Debug\CellAnalyzerSharedLibrary.csproj.CoreCompileInputs.cache
 D:\CellAnalyzer\CellAnalyzerSharedLibrary\obj\Debug\CellAnalyzerSharedLibrary.dll
 D:\CellAnalyzer\CellAnalyzerSharedLibrary\obj\Debug\CellAnalyzerSharedLibrary.pdb
+D:\Git Projects\SampleProjects\CellAnalyzer\CellAnalyzerSharedLibrary\bin\Debug\CellAnalyzerSharedLibrary.dll
+D:\Git Projects\SampleProjects\CellAnalyzer\CellAnalyzerSharedLibrary\bin\Debug\CellAnalyzerSharedLibrary.pdb
+D:\Git Projects\SampleProjects\CellAnalyzer\CellAnalyzerSharedLibrary\obj\Debug\CellAnalyzerSharedLibrary.csproj.AssemblyReference.cache
+D:\Git Projects\SampleProjects\CellAnalyzer\CellAnalyzerSharedLibrary\obj\Debug\CellAnalyzerSharedLibrary.csproj.CoreCompileInputs.cache
+D:\Git Projects\SampleProjects\CellAnalyzer\CellAnalyzerSharedLibrary\obj\Debug\CellAnalyzerSharedLibrary.dll
+D:\Git Projects\SampleProjects\CellAnalyzer\CellAnalyzerSharedLibrary\obj\Debug\CellAnalyzerSharedLibrary.pdb

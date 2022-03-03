@@ -1,0 +1,15 @@
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\bin\Debug\WordVSTOAddIn.dll
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\bin\Debug\WordVSTOAddIn.pdb
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\bin\Debug\WordVSTOAddIn.dll.manifest
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\bin\Debug\WordVSTOAddIn.vsto
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\obj\Debug\WordVSTOAddIn.csproj.AssemblyReference.cache
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\obj\Debug\WordVSTOAddIn.Properties.Resources.resources
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\obj\Debug\WordVSTOAddIn.WordDocumentAnalyzer.resources
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\obj\Debug\WordVSTOAddIn.csproj.GenerateResource.cache
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\obj\Debug\WordVSTOAddIn.csproj.CoreCompileInputs.cache
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\obj\Debug\WordVSTOAddIn.csproj.CopyComplete
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\obj\Debug\WordVSTOAddIn.dll
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\obj\Debug\WordVSTOAddIn.pdb
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\bin\Debug\WordSharedCodeLibrary.dll
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordVSTOAddIn\bin\Debug\WordSharedCodeLibrary.pdb

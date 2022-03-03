@@ -27,7 +27,7 @@ namespace CellAnalyzerRESTAPI
                 options.AddPolicy(MyAllowSpecificOrigins,
                 builder =>
                 {
-                    builder.WithOrigins("51826")
+                    builder.WithOrigins()
                   .AllowAnyMethod()
                   .AllowAnyHeader();
                 });

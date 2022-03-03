@@ -28,3 +28,9 @@ C:\Users\Gaurav Budhiraja\source\repos\ExcelAddIn\Cell-Analyzer\obj\Debug\Cell-A
 C:\Users\Gaurav Budhiraja\source\repos\ExcelAddIn\Cell-Analyzer\obj\Debug\Cell-Analyzer.csproj.CopyComplete
 C:\Users\Gaurav Budhiraja\source\repos\ExcelAddIn\Cell-Analyzer\obj\Debug\Cell-Analyzer.dll
 C:\Users\Gaurav Budhiraja\source\repos\ExcelAddIn\Cell-Analyzer\obj\Debug\Cell-Analyzer.pdb
+D:\Git Projects\SampleProjects\ExcelAddIn\Cell-Analyzer\obj\Debug\Cell-Analyzer.csproj.AssemblyReference.cache
+D:\Git Projects\SampleProjects\ExcelAddIn\Cell-Analyzer\obj\Debug\Cell_Analyzer.CellAnalyzerPane.resources
+D:\Git Projects\SampleProjects\ExcelAddIn\Cell-Analyzer\obj\Debug\Cell_Analyzer.Properties.Resources.resources
+D:\Git Projects\SampleProjects\ExcelAddIn\Cell-Analyzer\obj\Debug\Cell-Analyzer.csproj.GenerateResource.cache
+D:\Git Projects\SampleProjects\ExcelAddIn\Cell-Analyzer\obj\Debug\Cell-Analyzer.dll
+D:\Git Projects\SampleProjects\ExcelAddIn\Cell-Analyzer\obj\Debug\Cell-Analyzer.pdb

@@ -177,10 +177,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Cell-Analyzer_1_TemporaryKey.pfx" />
-    <None Include="Cell-Analyzer_2_TemporaryKey.pfx" />
-    <None Include="Cell-Analyzer_3_TemporaryKey.pfx" />
-    <None Include="Cell-Analyzer_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

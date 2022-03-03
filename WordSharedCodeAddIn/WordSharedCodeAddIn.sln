@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordVSTOAddIn", "WordVSTOAddIn\WordVSTOAddIn.csproj", "{A35E5890-0351-4FD9-8D37-F5BC7B7D8A05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordSharedCodeLibrary", "WordSharedCodeLibrary\WordSharedCodeLibrary.csproj", "{5D6CC55B-4905-43F2-BB21-2DA616244E4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordAnalyzerRestApi", "WordAnalyzerRestApi\WordAnalyzerRestApi.csproj", "{3E9590E5-9837-46E0-9835-E1A398DFC7C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordOperationOffice", "WordOperationOffice\WordOperationOffice.csproj", "{A42F0505-E45A-4B84-B6D7-942B101C7692}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordOperationOfficeWeb", "WordOperationOfficeWeb\WordOperationOfficeWeb.csproj", "{2A820719-487C-4A36-BF6D-D3110340F686}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A35E5890-0351-4FD9-8D37-F5BC7B7D8A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A35E5890-0351-4FD9-8D37-F5BC7B7D8A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A35E5890-0351-4FD9-8D37-F5BC7B7D8A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A35E5890-0351-4FD9-8D37-F5BC7B7D8A05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D6CC55B-4905-43F2-BB21-2DA616244E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D6CC55B-4905-43F2-BB21-2DA616244E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D6CC55B-4905-43F2-BB21-2DA616244E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D6CC55B-4905-43F2-BB21-2DA616244E4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E9590E5-9837-46E0-9835-E1A398DFC7C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9590E5-9837-46E0-9835-E1A398DFC7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9590E5-9837-46E0-9835-E1A398DFC7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9590E5-9837-46E0-9835-E1A398DFC7C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A42F0505-E45A-4B84-B6D7-942B101C7692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A42F0505-E45A-4B84-B6D7-942B101C7692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A42F0505-E45A-4B84-B6D7-942B101C7692}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A42F0505-E45A-4B84-B6D7-942B101C7692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A42F0505-E45A-4B84-B6D7-942B101C7692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A42F0505-E45A-4B84-B6D7-942B101C7692}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2A820719-487C-4A36-BF6D-D3110340F686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A820719-487C-4A36-BF6D-D3110340F686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A820719-487C-4A36-BF6D-D3110340F686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A820719-487C-4A36-BF6D-D3110340F686}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {927F10EF-6A1C-4464-89DD-8A387D5FA4AC}
+	EndGlobalSection
+EndGlobal

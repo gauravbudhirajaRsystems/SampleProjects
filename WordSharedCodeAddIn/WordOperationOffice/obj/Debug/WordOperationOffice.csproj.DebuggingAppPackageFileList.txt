@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\WordOperationOfficeManifest.xml
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordOperationOffice\bin\Debug\WordOperationOffice.debugapp
