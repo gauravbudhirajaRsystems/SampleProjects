@@ -1,0 +1,15 @@
+D:\CellAnalyzer\Cell-Analyzer\obj\Debug\Cell-Analyzer.csproj.AssemblyReference.cache
+D:\CellAnalyzer\Cell-Analyzer\obj\Debug\Cell_Analyzer.CellAnalyzerPane.resources
+D:\CellAnalyzer\Cell-Analyzer\obj\Debug\Cell_Analyzer.Properties.Resources.resources
+D:\CellAnalyzer\Cell-Analyzer\obj\Debug\Cell-Analyzer.csproj.GenerateResource.cache
+D:\CellAnalyzer\Cell-Analyzer\bin\Debug\Cell-Analyzer.dll
+D:\CellAnalyzer\Cell-Analyzer\bin\Debug\Cell-Analyzer.pdb
+D:\CellAnalyzer\Cell-Analyzer\bin\Debug\Cell-Analyzer.dll.manifest
+D:\CellAnalyzer\Cell-Analyzer\bin\Debug\Cell-Analyzer.vsto
+D:\CellAnalyzer\Cell-Analyzer\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\CellAnalyzer\Cell-Analyzer\obj\Debug\Cell-Analyzer.csproj.CoreCompileInputs.cache
+D:\CellAnalyzer\Cell-Analyzer\obj\Debug\Cell-Analyzer.csproj.CopyComplete
+D:\CellAnalyzer\Cell-Analyzer\obj\Debug\Cell-Analyzer.dll
+D:\CellAnalyzer\Cell-Analyzer\obj\Debug\Cell-Analyzer.pdb
+D:\CellAnalyzer\Cell-Analyzer\bin\Debug\CellAnalyzerSharedLibrary.dll
+D:\CellAnalyzer\Cell-Analyzer\bin\Debug\CellAnalyzerSharedLibrary.pdb

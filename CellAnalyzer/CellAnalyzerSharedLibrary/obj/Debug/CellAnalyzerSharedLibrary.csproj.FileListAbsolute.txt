@@ -1,0 +1,6 @@
+D:\CellAnalyzer\CellAnalyzerSharedLibrary\bin\Debug\CellAnalyzerSharedLibrary.dll
+D:\CellAnalyzer\CellAnalyzerSharedLibrary\bin\Debug\CellAnalyzerSharedLibrary.pdb
+D:\CellAnalyzer\CellAnalyzerSharedLibrary\obj\Debug\CellAnalyzerSharedLibrary.csproj.AssemblyReference.cache
+D:\CellAnalyzer\CellAnalyzerSharedLibrary\obj\Debug\CellAnalyzerSharedLibrary.csproj.CoreCompileInputs.cache
+D:\CellAnalyzer\CellAnalyzerSharedLibrary\obj\Debug\CellAnalyzerSharedLibrary.dll
+D:\CellAnalyzer\CellAnalyzerSharedLibrary\obj\Debug\CellAnalyzerSharedLibrary.pdb
