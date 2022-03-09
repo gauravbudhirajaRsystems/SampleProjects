@@ -97,13 +97,17 @@ Office.onReady(function (info) {
   if (info.host === Office.HostType.Word) {
     // Determine if the user's version of Office supports all the Office.js APIs that are used in the tutorial.
     if (!Office.context.requirements.isSetSupported("WordApi", "1.3")) {
+      document.getElementById("txtWordVersion").value = "If Condition Succeed"; // Office.document.body.insertParagraph("If Condition Succeed", "Start");
+
       console.log("Sorry. The tutorial add-in uses Word.js APIs that are not available in your version of Office.");
+    } else {
+      document.getElementById("txtWordVersion").value = "If Condition Fails"; //Office.document.body.insertParagraph("If Condition Fails", "Start");
     } // Assign event handlers and other initialization logic.
 
 
-    document.getElementById("insert-paragraph").onclick = insertParagraph;
-    document.getElementById("apply-style").onclick = insertParagraphNew; //document.getElementById("apply-style").onclick = applyStyle;
+    document.getElementById("insert-paragraph").onclick = insertParagraph; //document.getElementById("apply-style").onclick = insertParagraphNew;
 
+    document.getElementById("apply-style").onclick = applyStyle;
     document.getElementById("apply-custom-style").onclick = applyCustomStyle;
     document.getElementById("change-font").onclick = changeFont;
     document.getElementById("insert-text-into-range").onclick = insertTextIntoRange;
@@ -240,19 +244,21 @@ function _insertTable() {
             _context6.next = 2;
             return Word.run( /*#__PURE__*/function () {
               var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee5(context) {
-                var tableData;
+                var secondParagraph, tableData;
                 return regeneratorRuntime.wrap(function _callee5$(_context5) {
                   while (1) {
                     switch (_context5.prev = _context5.next) {
                       case 0:
                         //const secondParagraph = context.document.body.paragraphs.getFirst().getNext();
-                        tableData = [["Name", "ID", "Birth City"], ["Bob", "434", "Chicago"], ["Sue", "719", "Havana"]]; // context.document.body.paragraphs.getFirst().getNext().insertTable(3, 3, "After", tableData);
+                        secondParagraph = context.document.body.paragraphs.getFirst();
+                        tableData = [["Name", "ID", "Birth City"], ["Bob", "434", "Chicago"], ["Sue", "719", "Havana"]];
+                        secondParagraph.insertTable(3, 3, "After", tableData); //context.document.body.paragraphs.getFirst().getNext().insertTable(3, 3, "After", tableData);
+                        //context.document.body.insertTable(3, 3, "Start", tableData);
 
-                        context.document.body.insertTable(3, 3, "Start", tableData);
-                        _context5.next = 4;
+                        _context5.next = 5;
                         return context.sync();
 
-                      case 4:
+                      case 5:
                       case "end":
                         return _context5.stop();
                     }
@@ -526,7 +532,7 @@ function _applyStyle() {
                     switch (_context15.prev = _context15.next) {
                       case 0:
                         firstParagraph = context.document.body.paragraphs.getFirst();
-                        firstParagraph.styleBuiltIn = Word.Style.intenseReference;
+                        firstParagraph.styleBuiltIn = Word.Style.intenseQuote;
                         _context15.next = 4;
                         return context.sync();
 
@@ -572,18 +578,17 @@ function _applyCustomStyle() {
             _context18.next = 2;
             return Word.run( /*#__PURE__*/function () {
               var _ref9 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee17(context) {
+                var lastParagraph;
                 return regeneratorRuntime.wrap(function _callee17$(_context17) {
                   while (1) {
                     switch (_context17.prev = _context17.next) {
                       case 0:
-                        // const lastParagraph = context.document.body.paragraphs.getLast();
-                        // lastParagraph.style = "MyCustomStyle";
-                        // await context.sync();
-                        context.document.body.insertParagraph("MyCustomStyle", "Start");
-                        _context17.next = 3;
+                        lastParagraph = context.document.body.paragraphs.getLast();
+                        lastParagraph.style = "MyCustomStyle";
+                        _context17.next = 4;
                         return context.sync();
 
-                      case 3:
+                      case 4:
                       case "end":
                         return _context17.stop();
                     }
@@ -777,63 +782,6 @@ function _insertParagraph() {
     }, _callee24);
   }));
   return _insertParagraph.apply(this, arguments);
-}
-
-function insertParagraphNew() {
-  return _insertParagraphNew.apply(this, arguments);
-}
-
-function _insertParagraphNew() {
-  _insertParagraphNew = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee26() {
-    return regeneratorRuntime.wrap(function _callee26$(_context26) {
-      while (1) {
-        switch (_context26.prev = _context26.next) {
-          case 0:
-            _context26.next = 2;
-            return Word.run( /*#__PURE__*/function () {
-              var _ref13 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee25(context) {
-                var docBody;
-                return regeneratorRuntime.wrap(function _callee25$(_context25) {
-                  while (1) {
-                    switch (_context25.prev = _context25.next) {
-                      case 0:
-                        docBody = context.document.body;
-                        docBody.insertParagraph("Office has several versions, including Office 2016, Microsoft 365 subscription, and Office on the web. New Text", "Start");
-                        _context25.next = 4;
-                        return context.sync();
-
-                      case 4:
-                        docBody.insertParagraph(context.document.body.paragraphs.toJSON(), "End");
-                        _context25.next = 7;
-                        return context.sync();
-
-                      case 7:
-                      case "end":
-                        return _context25.stop();
-                    }
-                  }
-                }, _callee25);
-              }));
-
-              return function (_x13) {
-                return _ref13.apply(this, arguments);
-              };
-            }()).catch(function (error) {
-              console.log("Error: " + error);
-
-              if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-            });
-
-          case 2:
-          case "end":
-            return _context26.stop();
-        }
-      }
-    }, _callee26);
-  }));
-  return _insertParagraphNew.apply(this, arguments);
 }
 }();
 /******/ })()

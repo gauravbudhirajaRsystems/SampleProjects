@@ -12,13 +12,18 @@ Office.onReady((info) => {
   if (info.host === Office.HostType.Word) {
     // Determine if the user's version of Office supports all the Office.js APIs that are used in the tutorial.
     if (!Office.context.requirements.isSetSupported("WordApi", "1.3")) {
+      document.getElementById("txtWordVersion").value = "If Condition Succeed";
+      // Office.document.body.insertParagraph("If Condition Succeed", "Start");
       console.log("Sorry. The tutorial add-in uses Word.js APIs that are not available in your version of Office.");
+    } else {
+      document.getElementById("txtWordVersion").value = "If Condition Fails";
+      //Office.document.body.insertParagraph("If Condition Fails", "Start");
     }
 
     // Assign event handlers and other initialization logic.
     document.getElementById("insert-paragraph").onclick = insertParagraph;
-    document.getElementById("apply-style").onclick = insertParagraphNew;
-    //document.getElementById("apply-style").onclick = applyStyle;
+    //document.getElementById("apply-style").onclick = insertParagraphNew;
+    document.getElementById("apply-style").onclick = applyStyle;
     document.getElementById("apply-custom-style").onclick = applyCustomStyle;
     document.getElementById("change-font").onclick = changeFont;
     document.getElementById("insert-text-into-range").onclick = insertTextIntoRange;
@@ -72,14 +77,15 @@ async function createContentControl() {
 async function insertTable() {
   await Word.run(async (context) => {
     //const secondParagraph = context.document.body.paragraphs.getFirst().getNext();
-
+    const secondParagraph = context.document.body.paragraphs.getFirst();
     const tableData = [
       ["Name", "ID", "Birth City"],
       ["Bob", "434", "Chicago"],
       ["Sue", "719", "Havana"],
     ];
-    // context.document.body.paragraphs.getFirst().getNext().insertTable(3, 3, "After", tableData);
-    context.document.body.insertTable(3, 3, "Start", tableData);
+    secondParagraph.insertTable(3, 3, "After", tableData);
+    //context.document.body.paragraphs.getFirst().getNext().insertTable(3, 3, "After", tableData);
+    //context.document.body.insertTable(3, 3, "Start", tableData);
 
     await context.sync();
   }).catch(function (error) {
@@ -172,10 +178,11 @@ async function insertTextBeforeRange() {
 // }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 async function applyStyle() {
   await Word.run(async (context) => {
     const firstParagraph = context.document.body.paragraphs.getFirst();
-    firstParagraph.styleBuiltIn = Word.Style.intenseReference;
+    firstParagraph.styleBuiltIn = Word.Style.intenseQuote;
 
     await context.sync();
   }).catch(function (error) {
@@ -188,10 +195,8 @@ async function applyStyle() {
 
 async function applyCustomStyle() {
   await Word.run(async (context) => {
-    // const lastParagraph = context.document.body.paragraphs.getLast();
-    // lastParagraph.style = "MyCustomStyle";
-    // await context.sync();
-    context.document.body.insertParagraph("MyCustomStyle","Start");
+    const lastParagraph = context.document.body.paragraphs.getLast();
+    lastParagraph.style = "MyCustomStyle";
     await context.sync();
   }).catch(function (error) {
     console.log("Error: " + error);
@@ -246,25 +251,6 @@ async function insertParagraph() {
       "Office has several versions, including Office 2016, Microsoft 365 subscription, and Office on the web.",
       "Start"
     );
-    await context.sync();
-  }).catch(function (error) {
-    console.log("Error: " + error);
-    if (error instanceof OfficeExtension.Error) {
-      console.log("Debug info: " + JSON.stringify(error.debugInfo));
-    }
-  });
-}
-
-async function insertParagraphNew() {
-  await Word.run(async (context) => {
-    const docBody = context.document.body;
-    docBody.insertParagraph(
-      "Office has several versions, including Office 2016, Microsoft 365 subscription, and Office on the web. New Text",
-      "Start"
-    );
-    await context.sync();
-
-    docBody.insertParagraph(context.document.body.paragraphs.toJSON(), "End");
     await context.sync();
   }).catch(function (error) {
     console.log("Error: " + error);

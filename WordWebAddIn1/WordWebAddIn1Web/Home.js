@@ -77,7 +77,7 @@
             // create a proxy range object with the results.
             var range = context.document.getSelection();
 
-            
+
             // This variable will keep the search results for the longest word.
             var searchResults;
 
