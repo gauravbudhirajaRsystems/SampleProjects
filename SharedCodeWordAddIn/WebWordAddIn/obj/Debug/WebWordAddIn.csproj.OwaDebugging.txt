@@ -1,0 +1,7 @@
+False
+0df31ade-21cf-4937-8a05-ae8eb5fc33f2ffd73405-2407-41a1-bf4b-5fd00a638c14
+{6b0b77d2-3b39-4779-bafa-66b0884d03cc}{1d1eaf89-f5bf-435a-961f-ac981490f54c}
+{f19bdc17-817d-41b7-b3eb-ce10838370a0}
+1.0.0.0
+WebWordAddIn
+_layouts/15/

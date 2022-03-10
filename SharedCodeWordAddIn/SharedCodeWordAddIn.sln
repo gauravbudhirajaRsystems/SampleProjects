@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTOWordAddIn", "VSTOWordAddIn\VSTOWordAddIn.csproj", "{160A051F-2E1D-483E-B024-BC1C92A0CAB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedCodeWordLibrary", "SharedCodeWordLibrary\SharedCodeWordLibrary.csproj", "{5FB6388D-F1C8-41CD-8437-E15280CFB023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordAnalyzerRestApi", "WordAnalyzerRestApi\WordAnalyzerRestApi.csproj", "{FD79BE09-930F-4C29-803E-95E7F33CE9AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebWordAddIn", "WebWordAddIn\WebWordAddIn.csproj", "{C2FFA8A7-AF4B-460B-8BE7-4FCDBC835DD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebWordAddInWeb", "WebWordAddInWeb\WebWordAddInWeb.csproj", "{BC7D3641-829F-4DB2-9B11-2097B40992B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{160A051F-2E1D-483E-B024-BC1C92A0CAB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{160A051F-2E1D-483E-B024-BC1C92A0CAB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{160A051F-2E1D-483E-B024-BC1C92A0CAB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{160A051F-2E1D-483E-B024-BC1C92A0CAB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FB6388D-F1C8-41CD-8437-E15280CFB023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB6388D-F1C8-41CD-8437-E15280CFB023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB6388D-F1C8-41CD-8437-E15280CFB023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB6388D-F1C8-41CD-8437-E15280CFB023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD79BE09-930F-4C29-803E-95E7F33CE9AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD79BE09-930F-4C29-803E-95E7F33CE9AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD79BE09-930F-4C29-803E-95E7F33CE9AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD79BE09-930F-4C29-803E-95E7F33CE9AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2FFA8A7-AF4B-460B-8BE7-4FCDBC835DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2FFA8A7-AF4B-460B-8BE7-4FCDBC835DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2FFA8A7-AF4B-460B-8BE7-4FCDBC835DD0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C2FFA8A7-AF4B-460B-8BE7-4FCDBC835DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2FFA8A7-AF4B-460B-8BE7-4FCDBC835DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2FFA8A7-AF4B-460B-8BE7-4FCDBC835DD0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BC7D3641-829F-4DB2-9B11-2097B40992B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC7D3641-829F-4DB2-9B11-2097B40992B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC7D3641-829F-4DB2-9B11-2097B40992B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC7D3641-829F-4DB2-9B11-2097B40992B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {835E0C26-67AC-4D74-82F1-DA69780C0556}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,2 @@
+D:\Git Projects\SampleProjects\SharedCodeWordAddIn\WebWordAddIn\obj\Debug\WebWordAddIn.csproj.AssemblyReference.cache
+D:\Git Projects\SampleProjects\SharedCodeWordAddIn\WebWordAddIn\obj\Debug\WebWordAddIn.csproj.CoreCompileInputs.cache
