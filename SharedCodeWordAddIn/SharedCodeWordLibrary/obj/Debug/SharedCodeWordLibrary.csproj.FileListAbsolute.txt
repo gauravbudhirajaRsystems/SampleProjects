@@ -4,3 +4,9 @@ D:\Git Projects\SampleProjects\SharedCodeWordAddIn\SharedCodeWordLibrary\obj\Deb
 D:\Git Projects\SampleProjects\SharedCodeWordAddIn\SharedCodeWordLibrary\obj\Debug\SharedCodeWordLibrary.csproj.CoreCompileInputs.cache
 D:\Git Projects\SampleProjects\SharedCodeWordAddIn\SharedCodeWordLibrary\obj\Debug\SharedCodeWordLibrary.dll
 D:\Git Projects\SampleProjects\SharedCodeWordAddIn\SharedCodeWordLibrary\obj\Debug\SharedCodeWordLibrary.pdb
+D:\R Systems\Git Projects\SampleProjects\SharedCodeWordAddIn\SharedCodeWordLibrary\bin\Debug\SharedCodeWordLibrary.dll
+D:\R Systems\Git Projects\SampleProjects\SharedCodeWordAddIn\SharedCodeWordLibrary\bin\Debug\SharedCodeWordLibrary.pdb
+D:\R Systems\Git Projects\SampleProjects\SharedCodeWordAddIn\SharedCodeWordLibrary\obj\Debug\SharedCodeWordLibrary.csproj.AssemblyReference.cache
+D:\R Systems\Git Projects\SampleProjects\SharedCodeWordAddIn\SharedCodeWordLibrary\obj\Debug\SharedCodeWordLibrary.csproj.CoreCompileInputs.cache
+D:\R Systems\Git Projects\SampleProjects\SharedCodeWordAddIn\SharedCodeWordLibrary\obj\Debug\SharedCodeWordLibrary.dll
+D:\R Systems\Git Projects\SampleProjects\SharedCodeWordAddIn\SharedCodeWordLibrary\obj\Debug\SharedCodeWordLibrary.pdb
