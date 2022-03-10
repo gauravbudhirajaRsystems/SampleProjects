@@ -36,6 +36,7 @@
             // 
             this.btnShowText.Location = new System.Drawing.Point(61, 32);
             this.btnShowText.Name = "btnShowText";
+            this.btnShowText.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnShowText.Size = new System.Drawing.Size(200, 23);
             this.btnShowText.TabIndex = 0;
             this.btnShowText.Text = "Show Text";
@@ -48,6 +49,7 @@
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
             this.txtResult.ReadOnly = true;
+            this.txtResult.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtResult.Size = new System.Drawing.Size(226, 102);
             this.txtResult.TabIndex = 1;
             // 
