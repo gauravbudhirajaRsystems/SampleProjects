@@ -7,3 +7,7 @@
 /SharedCodeWordAddIn/WebWordAddInWeb/bin
 /SharedCodeWordAddIn/WordAnalyzerRestApi/obj
 /SharedCodeWordAddIn/WordAnalyzerRestApi/bin
+/SharedCodeWordAddIn/WebWordAddIn/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/SharedCodeWordAddIn/WebWordAddIn/obj/Debug/*.cache
+/SharedCodeWordAddIn/WebWordAddIn/obj/Debug/WebWordAddIn.csproj.FileListAbsolute.txt
+/SharedCodeWordAddIn/WebWordAddIn/obj/Debug/WebWordAddIn.csproj.OwaDebugging.txt

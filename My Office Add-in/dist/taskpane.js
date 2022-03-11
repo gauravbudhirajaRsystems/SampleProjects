@@ -80,9 +80,11 @@ var __webpack_exports__ = {};
   \**********************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _base64Image__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../base64Image */ "./base64Image.js");
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+/* eslint-disable office-addins/load-object-before-read */
 
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
+/* eslint-disable no-empty */
 
 /* eslint-disable no-undef */
 
@@ -96,693 +98,547 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 Office.onReady(function (info) {
   if (info.host === Office.HostType.Word) {
     // Determine if the user's version of Office supports all the Office.js APIs that are used in the tutorial.
-    if (!Office.context.requirements.isSetSupported("WordApi", "1.3")) {
-      document.getElementById("txtWordVersion").value = "If Condition Succeed"; // Office.document.body.insertParagraph("If Condition Succeed", "Start");
+    // eslint-disable-next-line no-empty
+    if (Office.context.requirements.isSetSupported("WordApi", "1.1")) {
+      // for Office 2016
+      document.getElementById("show-unicode").onclick = ShowUnicode;
+      document.getElementById("show-charcount").onclick = ShowCharCount;
+      document.getElementById("show-wordcount").onclick = ShowWordCount;
+      document.getElementById("insert-paragraph").onclick = insertParagraph;
+      document.getElementById("align-text-right").onclick = alignTextRight;
+      document.getElementById("apply-inbuild-style").onclick = applyInBuiltStyle;
+      document.getElementById("change-font").onclick = changeFont;
+      document.getElementById("insert-text-into-range").onclick = insertTextIntoRange;
+      document.getElementById("insert-text-outside-range").onclick = insertTextBeforeRange;
+      document.getElementById("replace-text").onclick = replaceText;
+      document.getElementById("insert-image").onclick = insertImage;
+      document.getElementById("insert-html").onclick = insertHTML;
+      document.getElementById("insert-table").onclick = insertTable;
+      document.getElementById("create-content-control").onclick = createContentControl;
+      document.getElementById("replace-content-in-control").onclick = replaceContentInControl;
+    } else if (Office.context.requirements.isSetSupported("WordApi", "1.3")) {
+      // For Office 2019
+      document.getElementById("insert-paragraph").onclick = insertParagraph;
+      document.getElementById("align-text-right").onclick = alignTextRight;
+      document.getElementById("apply-inbuild-style").onclick = applyInBuiltStyle;
+      document.getElementById("change-font").onclick = changeFont;
+      document.getElementById("insert-text-into-range").onclick = insertTextIntoRange;
+      document.getElementById("insert-text-outside-range").onclick = insertTextBeforeRange;
+      document.getElementById("replace-text").onclick = replaceText;
+      document.getElementById("insert-image").onclick = insertImage;
+      document.getElementById("insert-html").onclick = insertHTML;
+      document.getElementById("insert-table").onclick = insertTable;
+      document.getElementById("create-content-control").onclick = createContentControl;
+      document.getElementById("replace-content-in-control").onclick = replaceContentInControl;
+    } else {} // Assign event handlers and other initialization logic.
+    // document.getElementById("insert-paragraph").onclick = insertParagraph;
+    // //document.getElementById("apply-style").onclick = insertParagraphNew;
+    // document.getElementById("apply-style").onclick = applyStyle;
+    // document.getElementById("apply-custom-style").onclick = applyCustomStyle;
+    // document.getElementById("change-font").onclick = changeFont;
+    // document.getElementById("insert-text-into-range").onclick = insertTextIntoRange;
+    // document.getElementById("insert-text-outside-range").onclick = insertTextBeforeRange;
+    // document.getElementById("replace-text").onclick = replaceText;
+    // document.getElementById("insert-image").onclick = insertImage;
+    // document.getElementById("insert-html").onclick = insertHTML;
+    // document.getElementById("insert-table").onclick = insertTable;
+    // document.getElementById("create-content-control").onclick = createContentControl;
+    // document.getElementById("replace-content-in-control").onclick = replaceContentInControl;
+    // document.getElementById("sideload-msg").style.display = "none";
 
-      console.log("Sorry. The tutorial add-in uses Word.js APIs that are not available in your version of Office.");
-    } else {
-      document.getElementById("txtWordVersion").value = "If Condition Fails"; //Office.document.body.insertParagraph("If Condition Fails", "Start");
-    } // Assign event handlers and other initialization logic.
-
-
-    document.getElementById("insert-paragraph").onclick = insertParagraph; //document.getElementById("apply-style").onclick = insertParagraphNew;
-
-    document.getElementById("apply-style").onclick = applyStyle;
-    document.getElementById("apply-custom-style").onclick = applyCustomStyle;
-    document.getElementById("change-font").onclick = changeFont;
-    document.getElementById("insert-text-into-range").onclick = insertTextIntoRange;
-    document.getElementById("insert-text-outside-range").onclick = insertTextBeforeRange;
-    document.getElementById("replace-text").onclick = replaceText;
-    document.getElementById("insert-image").onclick = insertImage;
-    document.getElementById("insert-html").onclick = insertHTML;
-    document.getElementById("insert-table").onclick = insertTable;
-    document.getElementById("create-content-control").onclick = createContentControl;
-    document.getElementById("replace-content-in-control").onclick = replaceContentInControl; // document.getElementById("sideload-msg").style.display = "none";
 
     document.getElementById("app-body").style.display = "flex"; //document.getElementById("run").onclick = run;
   }
-});
-
-function replaceContentInControl() {
-  return _replaceContentInControl.apply(this, arguments);
-}
-
-function _replaceContentInControl() {
-  _replaceContentInControl = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
-    return regeneratorRuntime.wrap(function _callee2$(_context2) {
-      while (1) {
-        switch (_context2.prev = _context2.next) {
-          case 0:
-            _context2.next = 2;
-            return Word.run( /*#__PURE__*/function () {
-              var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(context) {
-                var serviceNameContentControl;
-                return regeneratorRuntime.wrap(function _callee$(_context) {
-                  while (1) {
-                    switch (_context.prev = _context.next) {
-                      case 0:
-                        serviceNameContentControl = context.document.contentControls.getByTag("serviceName").getFirst();
-                        serviceNameContentControl.insertText("Fabrikam Online Productivity Suite", "Replace");
-                        _context.next = 4;
-                        return context.sync();
-
-                      case 4:
-                      case "end":
-                        return _context.stop();
-                    }
-                  }
-                }, _callee);
-              }));
-
-              return function (_x) {
-                return _ref.apply(this, arguments);
-              };
-            }()).catch(function (error) {
-              console.log("Error: " + error);
-
-              if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-            });
-
-          case 2:
-          case "end":
-            return _context2.stop();
-        }
-      }
-    }, _callee2);
-  }));
-  return _replaceContentInControl.apply(this, arguments);
-}
-
-function createContentControl() {
-  return _createContentControl.apply(this, arguments);
-}
-
-function _createContentControl() {
-  _createContentControl = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4() {
-    return regeneratorRuntime.wrap(function _callee4$(_context4) {
-      while (1) {
-        switch (_context4.prev = _context4.next) {
-          case 0:
-            _context4.next = 2;
-            return Word.run( /*#__PURE__*/function () {
-              var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3(context) {
-                var serviceNameRange, serviceNameContentControl;
-                return regeneratorRuntime.wrap(function _callee3$(_context3) {
-                  while (1) {
-                    switch (_context3.prev = _context3.next) {
-                      case 0:
-                        serviceNameRange = context.document.getSelection();
-                        serviceNameContentControl = serviceNameRange.insertContentControl();
-                        serviceNameContentControl.title = "Service Name";
-                        serviceNameContentControl.tag = "serviceName";
-                        serviceNameContentControl.appearance = "Tags";
-                        serviceNameContentControl.color = "blue";
-                        _context3.next = 8;
-                        return context.sync();
-
-                      case 8:
-                      case "end":
-                        return _context3.stop();
-                    }
-                  }
-                }, _callee3);
-              }));
-
-              return function (_x2) {
-                return _ref2.apply(this, arguments);
-              };
-            }()).catch(function (error) {
-              console.log("Error: " + error);
-
-              if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-            });
-
-          case 2:
-          case "end":
-            return _context4.stop();
-        }
-      }
-    }, _callee4);
-  }));
-  return _createContentControl.apply(this, arguments);
-}
-
-function insertTable() {
-  return _insertTable.apply(this, arguments);
-}
-
-function _insertTable() {
-  _insertTable = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee6() {
-    return regeneratorRuntime.wrap(function _callee6$(_context6) {
-      while (1) {
-        switch (_context6.prev = _context6.next) {
-          case 0:
-            _context6.next = 2;
-            return Word.run( /*#__PURE__*/function () {
-              var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee5(context) {
-                var secondParagraph, tableData;
-                return regeneratorRuntime.wrap(function _callee5$(_context5) {
-                  while (1) {
-                    switch (_context5.prev = _context5.next) {
-                      case 0:
-                        //const secondParagraph = context.document.body.paragraphs.getFirst().getNext();
-                        secondParagraph = context.document.body.paragraphs.getFirst();
-                        tableData = [["Name", "ID", "Birth City"], ["Bob", "434", "Chicago"], ["Sue", "719", "Havana"]];
-                        secondParagraph.insertTable(3, 3, "After", tableData); //context.document.body.paragraphs.getFirst().getNext().insertTable(3, 3, "After", tableData);
-                        //context.document.body.insertTable(3, 3, "Start", tableData);
-
-                        _context5.next = 5;
-                        return context.sync();
-
-                      case 5:
-                      case "end":
-                        return _context5.stop();
-                    }
-                  }
-                }, _callee5);
-              }));
-
-              return function (_x3) {
-                return _ref3.apply(this, arguments);
-              };
-            }()).catch(function (error) {
-              console.log("Error: " + error);
-
-              if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-            });
-
-          case 2:
-          case "end":
-            return _context6.stop();
-        }
-      }
-    }, _callee6);
-  }));
-  return _insertTable.apply(this, arguments);
-}
-
-function insertHTML() {
-  return _insertHTML.apply(this, arguments);
-}
-
-function _insertHTML() {
-  _insertHTML = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee8() {
-    return regeneratorRuntime.wrap(function _callee8$(_context8) {
-      while (1) {
-        switch (_context8.prev = _context8.next) {
-          case 0:
-            _context8.next = 2;
-            return Word.run( /*#__PURE__*/function () {
-              var _ref4 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee7(context) {
-                return regeneratorRuntime.wrap(function _callee7$(_context7) {
-                  while (1) {
-                    switch (_context7.prev = _context7.next) {
-                      case 0:
-                        //const blankParagraph = context.document.body.paragraphs.getLast().insertParagraph("", "After");
-                        context.document.body.insertHtml("<p style='font-family: verdana;'>Inserted HTML.</p><p>Another paragraph</p>", "Start");
-                        _context7.next = 3;
-                        return context.sync();
-
-                      case 3:
-                      case "end":
-                        return _context7.stop();
-                    }
-                  }
-                }, _callee7);
-              }));
-
-              return function (_x4) {
-                return _ref4.apply(this, arguments);
-              };
-            }()).catch(function (error) {
-              console.log("Error: " + error);
-
-              if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-            });
-
-          case 2:
-          case "end":
-            return _context8.stop();
-        }
-      }
-    }, _callee8);
-  }));
-  return _insertHTML.apply(this, arguments);
-}
-
-function insertImage() {
-  return _insertImage.apply(this, arguments);
-}
-
-function _insertImage() {
-  _insertImage = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee10() {
-    return regeneratorRuntime.wrap(function _callee10$(_context10) {
-      while (1) {
-        switch (_context10.prev = _context10.next) {
-          case 0:
-            _context10.next = 2;
-            return Word.run( /*#__PURE__*/function () {
-              var _ref5 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee9(context) {
-                return regeneratorRuntime.wrap(function _callee9$(_context9) {
-                  while (1) {
-                    switch (_context9.prev = _context9.next) {
-                      case 0:
-                        context.document.body.insertInlinePictureFromBase64(_base64Image__WEBPACK_IMPORTED_MODULE_0__.base64Image, "End");
-                        _context9.next = 3;
-                        return context.sync();
-
-                      case 3:
-                      case "end":
-                        return _context9.stop();
-                    }
-                  }
-                }, _callee9);
-              }));
-
-              return function (_x5) {
-                return _ref5.apply(this, arguments);
-              };
-            }()).catch(function (error) {
-              console.log("Error: " + error);
-
-              if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-            });
-
-          case 2:
-          case "end":
-            return _context10.stop();
-        }
-      }
-    }, _callee10);
-  }));
-  return _insertImage.apply(this, arguments);
-}
-
-function replaceText() {
-  return _replaceText.apply(this, arguments);
-}
-
-function _replaceText() {
-  _replaceText = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee12() {
-    return regeneratorRuntime.wrap(function _callee12$(_context12) {
-      while (1) {
-        switch (_context12.prev = _context12.next) {
-          case 0:
-            _context12.next = 2;
-            return Word.run( /*#__PURE__*/function () {
-              var _ref6 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee11(context) {
-                var doc, originalRange;
-                return regeneratorRuntime.wrap(function _callee11$(_context11) {
-                  while (1) {
-                    switch (_context11.prev = _context11.next) {
-                      case 0:
-                        doc = context.document;
-                        originalRange = doc.getSelection();
-                        originalRange.insertText("many", "Replace");
-                        _context11.next = 5;
-                        return context.sync();
-
-                      case 5:
-                      case "end":
-                        return _context11.stop();
-                    }
-                  }
-                }, _callee11);
-              }));
-
-              return function (_x6) {
-                return _ref6.apply(this, arguments);
-              };
-            }()).catch(function (error) {
-              console.log("Error: " + error);
-
-              if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-            });
-
-          case 2:
-          case "end":
-            return _context12.stop();
-        }
-      }
-    }, _callee12);
-  }));
-  return _replaceText.apply(this, arguments);
-}
-
-function insertTextBeforeRange() {
-  return _insertTextBeforeRange.apply(this, arguments);
-} // export async function run() {
-//   return Word.run(async (context) => {
-//     /**
-//      * Insert your Word code here
-//      */
-//     // insert a paragraph at the end of the document.
-//     const paragraph = context.document.body.insertParagraph("Hello World", Word.InsertLocation.end);
-//     // change the paragraph color to blue.
-//     paragraph.font.color = "blue";
+}); // async function replaceContentInControl() {
+//   await Word.run(async (context) => {
+//     const serviceNameContentControl = context.document.contentControls.getByTag("serviceName").getFirst();
+//     serviceNameContentControl.insertText("Fabrikam Online Productivity Suite", "Replace");
 //     await context.sync();
+//   }).catch(function (error) {
+//     console.log("Error: " + error);
+//     if (error instanceof OfficeExtension.Error) {
+//       console.log("Debug info: " + JSON.stringify(error.debugInfo));
+//     }
 //   });
 // }
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// async function createContentControl() {
+//   await Word.run(async (context) => {
+//     const serviceNameRange = context.document.getSelection();
+//     const serviceNameContentControl = serviceNameRange.insertContentControl();
+//     serviceNameContentControl.title = "Service Name";
+//     serviceNameContentControl.tag = "serviceName";
+//     serviceNameContentControl.appearance = "Tags";
+//     serviceNameContentControl.color = "blue";
+//     await context.sync();
+//   }).catch(function (error) {
+//     console.log("Error: " + error);
+//     if (error instanceof OfficeExtension.Error) {
+//       console.log("Debug info: " + JSON.stringify(error.debugInfo));
+//     }
+//   });
+// }
+// async function insertTable() {
+//   await Word.run(async (context) => {
+//     //const secondParagraph = context.document.body.paragraphs.getFirst().getNext();
+//     const secondParagraph = context.document.body.paragraphs.getFirst();
+//     const tableData = [
+//       ["Name", "ID", "Birth City"],
+//       ["Bob", "434", "Chicago"],
+//       ["Sue", "719", "Havana"],
+//     ];
+//     secondParagraph.insertTable(3, 3, "After", tableData);
+//     //context.document.body.paragraphs.getFirst().getNext().insertTable(3, 3, "After", tableData);
+//     //context.document.body.insertTable(3, 3, "Start", tableData);
+//     await context.sync();
+//   }).catch(function (error) {
+//     console.log("Error: " + error);
+//     if (error instanceof OfficeExtension.Error) {
+//       console.log("Debug info: " + JSON.stringify(error.debugInfo));
+//     }
+//   });
+// }
+// async function insertHTML() {
+//   await Word.run(async (context) => {
+//     //const blankParagraph = context.document.body.paragraphs.getLast().insertParagraph("", "After");
+//     context.document.body.insertHtml(
+//       "<p style='font-family: verdana;'>Inserted HTML.</p><p>Another paragraph</p>",
+//       "Start"
+//     );
+//     await context.sync();
+//   }).catch(function (error) {
+//     console.log("Error: " + error);
+//     if (error instanceof OfficeExtension.Error) {
+//       console.log("Debug info: " + JSON.stringify(error.debugInfo));
+//     }
+//   });
+// }
+// async function insertImage() {
+//   await Word.run(async (context) => {
+//     context.document.body.insertInlinePictureFromBase64(base64Image, "End");
+//     await context.sync();
+//   }).catch(function (error) {
+//     console.log("Error: " + error);
+//     if (error instanceof OfficeExtension.Error) {
+//       console.log("Debug info: " + JSON.stringify(error.debugInfo));
+//     }
+//   });
+// }
+// async function replaceText() {
+//   await Word.run(async (context) => {
+//     const doc = context.document;
+//     const originalRange = doc.getSelection();
+//     originalRange.insertText("many", "Replace");
+//     await context.sync();
+//   }).catch(function (error) {
+//     console.log("Error: " + error);
+//     if (error instanceof OfficeExtension.Error) {
+//       console.log("Debug info: " + JSON.stringify(error.debugInfo));
+//     }
+//   });
+// }
+// async function insertTextBeforeRange() {
+//   await Word.run(async (context) => {
+//     const doc = context.document;
+//     const originalRange = doc.getSelection();
+//     originalRange.insertText("Office 2019, ", "Before");
+//     originalRange.load("text");
+//     await context.sync();
+//     doc.body.insertParagraph("Current text of original range: " + originalRange.text, "End");
+//     await context.sync();
+//   }).catch(function (error) {
+//     console.log("Error: " + error);
+//     if (error instanceof OfficeExtension.Error) {
+//       console.log("Debug info: " + JSON.stringify(error.debugInfo));
+//     }
+//   });
+// }
+// // export async function run() {
+// //   return Word.run(async (context) => {
+// //     /**
+// //      * Insert your Word code here
+// //      */
+// //     // insert a paragraph at the end of the document.
+// //     const paragraph = context.document.body.insertParagraph("Hello World", Word.InsertLocation.end);
+// //     // change the paragraph color to blue.
+// //     paragraph.font.color = "blue";
+// //     await context.sync();
+// //   });
+// // }
+// // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// async function applyStyle() {
+//   await Word.run(async (context) => {
+//     const firstParagraph = context.document.body.paragraphs.getFirst();
+//     firstParagraph.styleBuiltIn = Word.Style.intenseQuote;
+//     await context.sync();
+//   }).catch(function (error) {
+//     console.log("Error: " + error);
+//     if (error instanceof OfficeExtension.Error) {
+//       console.log("Debug info: " + JSON.stringify(error.debugInfo));
+//     }
+//   });
+// }
+// async function applyCustomStyle() {
+//   await Word.run(async (context) => {
+//     const lastParagraph = context.document.body.paragraphs.getLast();
+//     lastParagraph.style = "MyCustomStyle";
+//     await context.sync();
+//   }).catch(function (error) {
+//     console.log("Error: " + error);
+//     if (error instanceof OfficeExtension.Error) {
+//       console.log("Debug info: " + JSON.stringify(error.debugInfo));
+//     }
+//   });
+// }
+// async function changeFont() {
+//   await Word.run(async (context) => {
+//     const secondParagraph = context.document.body.paragraphs.getFirst().getNext();
+//     secondParagraph.font.set({
+//       name: "Courier New",
+//       bold: true,
+//       size: 18,
+//     });
+//     await context.sync();
+//   }).catch(function (error) {
+//     console.log("Error: " + error);
+//     if (error instanceof OfficeExtension.Error) {
+//       console.log("Debug info: " + JSON.stringify(error.debugInfo));
+//     }
+//   });
+// }
+// async function insertTextIntoRange() {
+//   await Word.run(async (context) => {
+//     const doc = context.document;
+//     const originalRange = doc.getSelection();
+//     originalRange.insertText(" (C2R)", "End");
+//     originalRange.load("text");
+//     await context.sync();
+//     doc.body.insertParagraph("Original range: " + originalRange.text, "End");
+//     await context.sync();
+//   }).catch(function (error) {
+//     console.log("Error: " + error);
+//     if (error instanceof OfficeExtension.Error) {
+//       console.log("Debug info: " + JSON.stringify(error.debugInfo));
+//     }
+//   });
+// }
+// async function insertParagraph() {
+//   await Word.run(async (context) => {
+//     const docBody = context.document.body;
+//     docBody.insertParagraph(
+//       "Office has several versions, including Office 2016, Microsoft 365 subscription, and Office on the web.",
+//       "Start"
+//     );
+//     await context.sync();
+//   }).catch(function (error) {
+//     console.log("Error: " + error);
+//     if (error instanceof OfficeExtension.Error) {
+//       console.log("Debug info: " + JSON.stringify(error.debugInfo));
+//     }
+//   });
+// }
+// APi Interaction Code Starts
 
-
-function _insertTextBeforeRange() {
-  _insertTextBeforeRange = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee14() {
-    return regeneratorRuntime.wrap(function _callee14$(_context14) {
-      while (1) {
-        switch (_context14.prev = _context14.next) {
-          case 0:
-            _context14.next = 2;
-            return Word.run( /*#__PURE__*/function () {
-              var _ref7 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee13(context) {
-                var doc, originalRange;
-                return regeneratorRuntime.wrap(function _callee13$(_context13) {
-                  while (1) {
-                    switch (_context13.prev = _context13.next) {
-                      case 0:
-                        doc = context.document;
-                        originalRange = doc.getSelection();
-                        originalRange.insertText("Office 2019, ", "Before");
-                        originalRange.load("text");
-                        _context13.next = 6;
-                        return context.sync();
-
-                      case 6:
-                        doc.body.insertParagraph("Current text of original range: " + originalRange.text, "End");
-                        _context13.next = 9;
-                        return context.sync();
-
-                      case 9:
-                      case "end":
-                        return _context13.stop();
-                    }
-                  }
-                }, _callee13);
-              }));
-
-              return function (_x7) {
-                return _ref7.apply(this, arguments);
-              };
-            }()).catch(function (error) {
-              console.log("Error: " + error);
-
-              if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-            });
-
-          case 2:
-          case "end":
-            return _context14.stop();
+function ShowUnicode() {
+  Word.run(function (context) {
+    var originalRange = context.document.getSelection();
+    context.load(originalRange, "text");
+    return context.sync().then(function () {
+      var url = "https://localhost:44325/wordanalyzer/unicode?value=" + originalRange.text;
+      $.ajax({
+        type: "GET",
+        url: url,
+        success: function success(data_1) {
+          var htmlData = data_1.replace(/\r\n/g, "<br>");
+          $("#txtUnicodeResult").html(htmlData);
+        },
+        error: function error(data_3) {
+          $("#txtUnicodeResult").html("error occurred in ajax call.");
         }
-      }
-    }, _callee14);
-  }));
-  return _insertTextBeforeRange.apply(this, arguments);
+      });
+    });
+  }).catch(function (error) {
+    console.log("Error: " + JSON.stringify(error));
+
+    if (error instanceof OfficeExtension.Error) {
+      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+  });
 }
 
-function applyStyle() {
-  return _applyStyle.apply(this, arguments);
-}
-
-function _applyStyle() {
-  _applyStyle = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee16() {
-    return regeneratorRuntime.wrap(function _callee16$(_context16) {
-      while (1) {
-        switch (_context16.prev = _context16.next) {
-          case 0:
-            _context16.next = 2;
-            return Word.run( /*#__PURE__*/function () {
-              var _ref8 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee15(context) {
-                var firstParagraph;
-                return regeneratorRuntime.wrap(function _callee15$(_context15) {
-                  while (1) {
-                    switch (_context15.prev = _context15.next) {
-                      case 0:
-                        firstParagraph = context.document.body.paragraphs.getFirst();
-                        firstParagraph.styleBuiltIn = Word.Style.intenseQuote;
-                        _context15.next = 4;
-                        return context.sync();
-
-                      case 4:
-                      case "end":
-                        return _context15.stop();
-                    }
-                  }
-                }, _callee15);
-              }));
-
-              return function (_x8) {
-                return _ref8.apply(this, arguments);
-              };
-            }()).catch(function (error) {
-              console.log("Error: " + error);
-
-              if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-            });
-
-          case 2:
-          case "end":
-            return _context16.stop();
+function ShowCharCount() {
+  Word.run(function (context) {
+    var originalRange = context.document.getSelection();
+    context.load(originalRange, "text");
+    return context.sync().then(function () {
+      var url = "https://localhost:44325/wordanalyzer/charcount?value=" + originalRange.text;
+      $.ajax({
+        type: "GET",
+        url: url,
+        success: function success(data_1) {
+          var htmlData = data_1.replace(/\r\n/g, "<br>");
+          $("#txtCharCountResult").html(htmlData);
+        },
+        error: function error(data_3) {
+          $("#txtCharCountResult").html("error occurred in ajax call.");
         }
-      }
-    }, _callee16);
-  }));
-  return _applyStyle.apply(this, arguments);
+      });
+    });
+  });
 }
 
-function applyCustomStyle() {
-  return _applyCustomStyle.apply(this, arguments);
-}
-
-function _applyCustomStyle() {
-  _applyCustomStyle = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee18() {
-    return regeneratorRuntime.wrap(function _callee18$(_context18) {
-      while (1) {
-        switch (_context18.prev = _context18.next) {
-          case 0:
-            _context18.next = 2;
-            return Word.run( /*#__PURE__*/function () {
-              var _ref9 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee17(context) {
-                var lastParagraph;
-                return regeneratorRuntime.wrap(function _callee17$(_context17) {
-                  while (1) {
-                    switch (_context17.prev = _context17.next) {
-                      case 0:
-                        lastParagraph = context.document.body.paragraphs.getLast();
-                        lastParagraph.style = "MyCustomStyle";
-                        _context17.next = 4;
-                        return context.sync();
-
-                      case 4:
-                      case "end":
-                        return _context17.stop();
-                    }
-                  }
-                }, _callee17);
-              }));
-
-              return function (_x9) {
-                return _ref9.apply(this, arguments);
-              };
-            }()).catch(function (error) {
-              console.log("Error: " + error);
-
-              if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-            });
-
-          case 2:
-          case "end":
-            return _context18.stop();
+function ShowWordCount() {
+  Word.run(function (context) {
+    var originalRange = context.document.getSelection();
+    context.load(originalRange, "text");
+    return context.sync().then(function () {
+      var url = "https://localhost:44325/wordanalyzer/wordcount?value=" + originalRange.text;
+      $.ajax({
+        type: "GET",
+        url: url,
+        success: function success(data_1) {
+          var htmlData = data_1.replace(/\r\n/g, "<br>");
+          $("#txtWordCountResult").html(htmlData);
+        },
+        error: function error(data_3) {
+          $("#txtWordCountResult").html("error occurred in ajax call.");
         }
+      });
+    });
+  });
+} // APi Interaction Code Ends
+// Document Interaction Code Starts
+
+
+function insertParagraph() {
+  Word.run(function (context) {
+    var docBody = context.document.body;
+    docBody.insertParagraph("Office has several versions, including Office 2016, Microsoft 365 subscription, and Office on the web.", "Start");
+    return context.sync();
+  }).catch(function (error) {
+    console.log("Error: " + JSON.stringify(error));
+
+    if (error instanceof OfficeExtension.Error) {
+      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+  });
+}
+
+function alignTextRight() {
+  Word.run(function (context) {
+    var paragraphs = context.document.body.paragraphs;
+    paragraphs.load("text");
+    var firstParagraph;
+    return context.sync().then(function () {
+      if (paragraphs.items.length > 0) {
+        firstParagraph = paragraphs.items[0];
+        firstParagraph.load("alignment");
       }
-    }, _callee18);
-  }));
-  return _applyCustomStyle.apply(this, arguments);
+    }).then(context.sync).then(function () {
+      firstParagraph.alignment = Word.Alignment.right;
+    });
+  }).catch(function (error) {
+    console.log("Error: " + JSON.stringify(error));
+
+    if (error instanceof OfficeExtension.Error) {
+      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+  });
+}
+
+function applyInBuiltStyle() {
+  Word.run(function (context) {
+    var paragraphs = context.document.body.paragraphs;
+    paragraphs.load("text");
+    var firstParagraph;
+    return context.sync().then(function () {
+      if (paragraphs.items.length > 0) {
+        firstParagraph = paragraphs.items[0];
+        firstParagraph.load("styles");
+      }
+    }).then(context.sync).then(function () {
+      firstParagraph.styleBuiltIn = "Emphasis";
+    });
+  }).catch(function (error) {
+    console.log("Error: " + JSON.stringify(error));
+
+    if (error instanceof OfficeExtension.Error) {
+      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+  });
 }
 
 function changeFont() {
-  return _changeFont.apply(this, arguments);
-}
-
-function _changeFont() {
-  _changeFont = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee20() {
-    return regeneratorRuntime.wrap(function _callee20$(_context20) {
-      while (1) {
-        switch (_context20.prev = _context20.next) {
-          case 0:
-            _context20.next = 2;
-            return Word.run( /*#__PURE__*/function () {
-              var _ref10 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee19(context) {
-                var secondParagraph;
-                return regeneratorRuntime.wrap(function _callee19$(_context19) {
-                  while (1) {
-                    switch (_context19.prev = _context19.next) {
-                      case 0:
-                        secondParagraph = context.document.body.paragraphs.getFirst().getNext();
-                        secondParagraph.font.set({
-                          name: "Courier New",
-                          bold: true,
-                          size: 18
-                        });
-                        _context19.next = 4;
-                        return context.sync();
-
-                      case 4:
-                      case "end":
-                        return _context19.stop();
-                    }
-                  }
-                }, _callee19);
-              }));
-
-              return function (_x10) {
-                return _ref10.apply(this, arguments);
-              };
-            }()).catch(function (error) {
-              console.log("Error: " + error);
-
-              if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-            });
-
-          case 2:
-          case "end":
-            return _context20.stop();
-        }
+  Word.run(function (context) {
+    var paragraphs = context.document.body.paragraphs;
+    paragraphs.load("text");
+    var secondParagraph;
+    return context.sync().then(function () {
+      if (paragraphs.items.length > 1) {
+        secondParagraph = paragraphs.items[1];
+        secondParagraph.load("font");
       }
-    }, _callee20);
-  }));
-  return _changeFont.apply(this, arguments);
+    }).then(context.sync).then(function () {
+      var value = secondParagraph;
+      secondParagraph.font.set({
+        name: "Courier New",
+        bold: true,
+        size: 18
+      });
+    });
+  }).catch(function (error) {
+    console.log("Error: " + JSON.stringify(error));
+
+    if (error instanceof OfficeExtension.Error) {
+      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+  });
 }
 
 function insertTextIntoRange() {
-  return _insertTextIntoRange.apply(this, arguments);
+  Word.run(function (context) {
+    var originalRange = context.document.getSelection();
+    context.load(originalRange, "text");
+    return context.sync().then(function () {
+      originalRange.insertText(" (C2R)", "End");
+      originalRange.load("text");
+    }).then(context.sync).then(function () {
+      context.document.body.insertParagraph("Original range: " + originalRange.text, "End");
+    });
+  }).catch(function (error) {
+    console.log("Error: " + JSON.stringify(error));
+
+    if (error instanceof OfficeExtension.Error) {
+      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+  });
 }
 
-function _insertTextIntoRange() {
-  _insertTextIntoRange = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee22() {
-    return regeneratorRuntime.wrap(function _callee22$(_context22) {
-      while (1) {
-        switch (_context22.prev = _context22.next) {
-          case 0:
-            _context22.next = 2;
-            return Word.run( /*#__PURE__*/function () {
-              var _ref11 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee21(context) {
-                var doc, originalRange;
-                return regeneratorRuntime.wrap(function _callee21$(_context21) {
-                  while (1) {
-                    switch (_context21.prev = _context21.next) {
-                      case 0:
-                        doc = context.document;
-                        originalRange = doc.getSelection();
-                        originalRange.insertText(" (C2R)", "End");
-                        originalRange.load("text");
-                        _context21.next = 6;
-                        return context.sync();
+function insertTextBeforeRange() {
+  Word.run(function (context) {
+    var originalRange = context.document.getSelection();
+    context.load(originalRange, "text");
+    return context.sync().then(function () {
+      originalRange.insertText("Office 2016, ", "Before");
+      originalRange.load("text");
+    }).then(context.sync).then(function () {
+      context.document.body.insertParagraph("Original range: " + originalRange.text, "End");
+    });
+  }).catch(function (error) {
+    console.log("Error: " + JSON.stringify(error));
 
-                      case 6:
-                        doc.body.insertParagraph("Original range: " + originalRange.text, "End");
-                        _context21.next = 9;
-                        return context.sync();
+    if (error instanceof OfficeExtension.Error) {
+      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+  });
+}
 
-                      case 9:
-                      case "end":
-                        return _context21.stop();
-                    }
-                  }
-                }, _callee21);
-              }));
+function replaceText() {
+  Word.run(function (context) {
+    var originalRange = context.document.getSelection();
+    context.load(originalRange, "text");
+    return context.sync().then(function () {
+      originalRange.insertText("many", "Replace");
+    });
+  }).catch(function (error) {
+    console.log("Error: " + JSON.stringify(error));
 
-              return function (_x11) {
-                return _ref11.apply(this, arguments);
-              };
-            }()).catch(function (error) {
-              console.log("Error: " + error);
+    if (error instanceof OfficeExtension.Error) {
+      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+  });
+}
 
-              if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-            });
+function insertImage() {
+  Word.run(function (context) {
+    context.document.body.insertInlinePictureFromBase64(_base64Image__WEBPACK_IMPORTED_MODULE_0__.base64Image, "End");
+    return context.sync();
+  }).catch(function (error) {
+    console.log("Error: " + JSON.stringify(error));
 
-          case 2:
-          case "end":
-            return _context22.stop();
-        }
+    if (error instanceof OfficeExtension.Error) {
+      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+  });
+}
+
+function insertHTML() {
+  Word.run(function (context) {
+    var paragraphs = context.document.body.paragraphs;
+    paragraphs.load("text");
+    var blankParagraph;
+    return context.sync().then(function () {
+      if (paragraphs.items.length > 0) {
+        blankParagraph = paragraphs.items[paragraphs.items.length - 1].insertParagraph("", "After");
+        blankParagraph.insertHtml('<p style="font-family: verdana;">Inserted HTML.</p><p>Another paragraph</p>', "End");
       }
-    }, _callee22);
-  }));
-  return _insertTextIntoRange.apply(this, arguments);
+    });
+  }).catch(function (error) {
+    console.log("Error: " + JSON.stringify(error));
+
+    if (error instanceof OfficeExtension.Error) {
+      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+  });
 }
 
-function insertParagraph() {
-  return _insertParagraph.apply(this, arguments);
-}
-
-function _insertParagraph() {
-  _insertParagraph = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee24() {
-    return regeneratorRuntime.wrap(function _callee24$(_context24) {
-      while (1) {
-        switch (_context24.prev = _context24.next) {
-          case 0:
-            _context24.next = 2;
-            return Word.run( /*#__PURE__*/function () {
-              var _ref12 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee23(context) {
-                var docBody;
-                return regeneratorRuntime.wrap(function _callee23$(_context23) {
-                  while (1) {
-                    switch (_context23.prev = _context23.next) {
-                      case 0:
-                        docBody = context.document.body;
-                        docBody.insertParagraph("Office has several versions, including Office 2016, Microsoft 365 subscription, and Office on the web.", "Start");
-                        _context23.next = 4;
-                        return context.sync();
-
-                      case 4:
-                      case "end":
-                        return _context23.stop();
-                    }
-                  }
-                }, _callee23);
-              }));
-
-              return function (_x12) {
-                return _ref12.apply(this, arguments);
-              };
-            }()).catch(function (error) {
-              console.log("Error: " + error);
-
-              if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-            });
-
-          case 2:
-          case "end":
-            return _context24.stop();
-        }
+function insertTable() {
+  Word.run(function (context) {
+    var paragraphs = context.document.body.paragraphs;
+    paragraphs.load("text");
+    var blankParagraph;
+    var tableData = [["Name", "ID", "Birth City"], ["Bob", "434", "Chicago"], ["Sue", "719", "Havana"]];
+    return context.sync().then(function () {
+      if (paragraphs.items.length > 0) {
+        //blankParagraph = paragraphs.items[paragraphs.items.length - 1].insertParagraph("", "After");
+        blankParagraph = paragraphs.items[paragraphs.items.length - 1];
+        blankParagraph.insertTable(3, 3, "After", tableData);
       }
-    }, _callee24);
-  }));
-  return _insertParagraph.apply(this, arguments);
+    });
+  }).catch(function (error) {
+    console.log("Error: " + JSON.stringify(error));
+
+    if (error instanceof OfficeExtension.Error) {
+      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+  });
 }
+
+function createContentControl() {
+  Word.run(function (context) {
+    var serviceNameRange = context.document.getSelection();
+    context.load(serviceNameRange, "text");
+    return context.sync().then(function () {
+      var serviceNameContentControl = serviceNameRange.insertContentControl();
+      serviceNameContentControl.title = "Service Name";
+      serviceNameContentControl.tag = "serviceName";
+      serviceNameContentControl.appearance = "Tags";
+      serviceNameContentControl.color = "blue";
+    });
+  }).catch(function (error) {
+    console.log("Error: " + JSON.stringify(error));
+
+    if (error instanceof OfficeExtension.Error) {
+      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+  });
+}
+
+function replaceContentInControl() {
+  Word.run(function (context) {
+    var doc = context.document;
+    doc.load("contentControls");
+    return context.sync().then(function () {
+      var serviceNameContentControl = doc.contentControls.getByTag("serviceName").items[0];
+      serviceNameContentControl.insertText("Fabrikam Online Productivity Suite", "Replace");
+    });
+  }).catch(function (error) {
+    console.log("Error: " + JSON.stringify(error));
+
+    if (error instanceof OfficeExtension.Error) {
+      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+  });
+} // Document Interaction Code Ends
 }();
 /******/ })()
 ;
