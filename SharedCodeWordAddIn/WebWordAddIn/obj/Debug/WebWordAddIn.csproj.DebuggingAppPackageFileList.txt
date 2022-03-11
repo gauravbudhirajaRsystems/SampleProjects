@@ -1,2 +1,2 @@
 bin\Debug\OfficeAppManifests\WebWordAddInManifest.xml
-D:\R Systems\Git Projects\SampleProjects\SharedCodeWordAddIn\WebWordAddIn\bin\Debug\WebWordAddIn.debugapp
+D:\Git Projects\SampleProjects\SharedCodeWordAddIn\WebWordAddIn\bin\Debug\WebWordAddIn.debugapp

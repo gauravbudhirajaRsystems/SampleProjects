@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "D:\\R Systems\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\WordAnalyzerRestApi\\WordAnalyzerRestApi.csproj": {}
+    "D:\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\WordAnalyzerRestApi\\WordAnalyzerRestApi.csproj": {}
   },
   "projects": {
-    "D:\\R Systems\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\SharedCodeWordLibrary\\SharedCodeWordLibrary.csproj": {
+    "D:\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\SharedCodeWordLibrary\\SharedCodeWordLibrary.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\R Systems\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\SharedCodeWordLibrary\\SharedCodeWordLibrary.csproj",
+        "projectUniqueName": "D:\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\SharedCodeWordLibrary\\SharedCodeWordLibrary.csproj",
         "projectName": "SharedCodeWordLibrary",
-        "projectPath": "D:\\R Systems\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\SharedCodeWordLibrary\\SharedCodeWordLibrary.csproj",
+        "projectPath": "D:\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\SharedCodeWordLibrary\\SharedCodeWordLibrary.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
@@ -19,25 +19,18 @@
         "net48": {}
       }
     },
-    "D:\\R Systems\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\WordAnalyzerRestApi\\WordAnalyzerRestApi.csproj": {
+    "D:\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\WordAnalyzerRestApi\\WordAnalyzerRestApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\R Systems\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\WordAnalyzerRestApi\\WordAnalyzerRestApi.csproj",
+        "projectUniqueName": "D:\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\WordAnalyzerRestApi\\WordAnalyzerRestApi.csproj",
         "projectName": "WordAnalyzerRestApi",
-        "projectPath": "D:\\R Systems\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\WordAnalyzerRestApi\\WordAnalyzerRestApi.csproj",
-        "packagesPath": "C:\\Users\\Gaurav Budhiraja\\.nuget\\packages\\",
-        "outputPath": "D:\\R Systems\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\WordAnalyzerRestApi\\obj\\",
+        "projectPath": "D:\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\WordAnalyzerRestApi\\WordAnalyzerRestApi.csproj",
+        "packagesPath": "C:\\Users\\gaurav\\.nuget\\packages\\",
+        "outputPath": "D:\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\WordAnalyzerRestApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gaurav Budhiraja\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\gaurav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -50,8 +43,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\R Systems\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\SharedCodeWordLibrary\\SharedCodeWordLibrary.csproj": {
-                "projectPath": "D:\\R Systems\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\SharedCodeWordLibrary\\SharedCodeWordLibrary.csproj"
+              "D:\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\SharedCodeWordLibrary\\SharedCodeWordLibrary.csproj": {
+                "projectPath": "D:\\Git Projects\\SampleProjects\\SharedCodeWordAddIn\\SharedCodeWordLibrary\\SharedCodeWordLibrary.csproj"
               }
             }
           }
