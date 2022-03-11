@@ -1,0 +1,9 @@
+/SharedCodeWordAddIn/.vs
+/SharedCodeWordAddIn/SharedCodeWordLibrary/obj
+/SharedCodeWordAddIn/SharedCodeWordLibrary/bin
+/SharedCodeWordAddIn/VSTOWordAddIn/obj
+/SharedCodeWordAddIn/VSTOWordAddIn/bin
+/SharedCodeWordAddIn/WebWordAddInWeb/obj
+/SharedCodeWordAddIn/WebWordAddInWeb/bin
+/SharedCodeWordAddIn/WordAnalyzerRestApi/obj
+/SharedCodeWordAddIn/WordAnalyzerRestApi/bin
