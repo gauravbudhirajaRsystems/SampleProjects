@@ -1,2 +1,0 @@
-bin\Debug\OfficeAppManifests\WebWordAddInManifest.xml
-D:\Git Projects\SampleProjects\SharedCodeWordAddIn\WebWordAddIn\bin\Debug\WebWordAddIn.debugapp
