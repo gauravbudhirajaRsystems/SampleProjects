@@ -11,3 +11,5 @@
 /SharedCodeWordAddIn/WebWordAddIn/obj/Debug/*.cache
 /SharedCodeWordAddIn/WebWordAddIn/obj/Debug/WebWordAddIn.csproj.FileListAbsolute.txt
 /SharedCodeWordAddIn/WebWordAddIn/obj/Debug/WebWordAddIn.csproj.OwaDebugging.txt
+/SharedCodeWordAddIn/WebWordAddIn/bin/Debug
+/SharedCodeWordAddIn/WebWordAddIn/obj/Debug
