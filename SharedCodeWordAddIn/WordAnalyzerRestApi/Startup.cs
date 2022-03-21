@@ -25,9 +25,9 @@ namespace WordAnalyzerRestApi
             {
                 options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo
                 {
-                    Title = "Place Info Service API",
+                    Title = "Word Functionality Service API",
                     Version = "v2",
-                    Description = "Sample service for Learner",
+                    Description = "Sample service for Word Api",
                 });
             });
 
@@ -61,7 +61,7 @@ namespace WordAnalyzerRestApi
             });
 
             app.UseSwagger();
-            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v2/swagger.json", "PlaceInfo Services"));
+            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v2/swagger.json", "WordFunctionality Services"));
         }
     }
 }
