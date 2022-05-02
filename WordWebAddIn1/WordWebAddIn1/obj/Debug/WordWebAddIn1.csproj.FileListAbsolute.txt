@@ -2,3 +2,5 @@ C:\Users\Gaurav Budhiraja\source\repos\WordWebAddIn1\WordWebAddIn1\obj\Debug\Wor
 C:\Users\Gaurav Budhiraja\source\repos\WordWebAddIn1\WordWebAddIn1\obj\Debug\WordWebAddIn1.csproj.CoreCompileInputs.cache
 D:\Git Projects\SampleProjects\WordWebAddIn1\WordWebAddIn1\obj\Debug\WordWebAddIn1.csproj.AssemblyReference.cache
 D:\Git Projects\SampleProjects\WordWebAddIn1\WordWebAddIn1\obj\Debug\WordWebAddIn1.csproj.CoreCompileInputs.cache
+C:\Git Projects\SampleProjects\WordWebAddIn1\WordWebAddIn1\obj\Debug\WordWebAddIn1.csproj.AssemblyReference.cache
+C:\Git Projects\SampleProjects\WordWebAddIn1\WordWebAddIn1\obj\Debug\WordWebAddIn1.csproj.CoreCompileInputs.cache
