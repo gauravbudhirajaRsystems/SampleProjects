@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace WordAnalyzerRestApi.Controllers
 {
@@ -6,6 +7,18 @@ namespace WordAnalyzerRestApi.Controllers
     [ApiController]
     public class WordAnalyzerController : ControllerBase
     {
+
+        [HttpPost("document")]
+        public ActionResult<string> SendDocument(dynamic docBody)
+        {
+            //var obj = JsonSerializer.Deserialize<dynamic>(docBody);
+            if (docBody == null)
+            {
+                return BadRequest();
+            }
+            return null;
+        }
+
         [HttpGet("unicode")]
         public ActionResult<string> GetUnicode(string value)
         {

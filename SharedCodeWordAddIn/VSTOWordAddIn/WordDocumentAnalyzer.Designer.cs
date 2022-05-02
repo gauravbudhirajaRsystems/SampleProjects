@@ -68,7 +68,7 @@
             this.btnUnicode.TabIndex = 0;
             this.btnUnicode.Text = "Show Unicode";
             this.btnUnicode.UseVisualStyleBackColor = true;
-            this.btnUnicode.Click += new System.EventHandler(this.btnUnicode_Click);
+            this.btnUnicode.Click += new System.EventHandler(this.Unicode_Click);
             // 
             // btnCharCount
             // 
@@ -80,7 +80,7 @@
             this.btnCharCount.TabIndex = 1;
             this.btnCharCount.Text = "Show Char Count";
             this.btnCharCount.UseVisualStyleBackColor = true;
-            this.btnCharCount.Click += new System.EventHandler(this.btnCharCount_Click);
+            this.btnCharCount.Click += new System.EventHandler(this.CharCount_Click);
             // 
             // btnWordCount
             // 
@@ -92,7 +92,7 @@
             this.btnWordCount.TabIndex = 2;
             this.btnWordCount.Text = "Show Word Count";
             this.btnWordCount.UseVisualStyleBackColor = true;
-            this.btnWordCount.Click += new System.EventHandler(this.btnWordCount_Click);
+            this.btnWordCount.Click += new System.EventHandler(this.WordCount_Click);
             // 
             // txtUnicode
             // 
