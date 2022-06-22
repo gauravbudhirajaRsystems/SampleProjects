@@ -1,0 +1,7 @@
+False
+a72b1605-35fb-40b0-b8a6-a800a1a51d00746e5543-9ebe-4fe1-8c39-af23586c32c0
+{1accac56-2d99-403a-9cd0-7397515b6e91}{2661c0ca-1751-4dd9-a1af-402c02d1b7ce}
+{b6c38035-b909-4de1-bac1-178f2ed209af}
+1.0.0.0
+WebAddinTest1
+_layouts/15/

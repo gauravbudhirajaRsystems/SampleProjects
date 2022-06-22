@@ -1,0 +1,2 @@
+C:\Git Projects\SampleProjects\WebAddinTest1\WebAddinTest1\obj\Debug\WebAddinTest1.csproj.AssemblyReference.cache
+C:\Git Projects\SampleProjects\WebAddinTest1\WebAddinTest1\obj\Debug\WebAddinTest1.csproj.CoreCompileInputs.cache

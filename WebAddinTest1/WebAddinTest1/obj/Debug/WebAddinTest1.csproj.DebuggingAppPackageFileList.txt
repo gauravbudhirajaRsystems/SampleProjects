@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\WebAddinTest1Manifest.xml
+C:\Git Projects\SampleProjects\WebAddinTest1\WebAddinTest1\bin\Debug\WebAddinTest1.debugapp
