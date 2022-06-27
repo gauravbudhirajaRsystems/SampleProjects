@@ -1,7 +1,0 @@
-False
-42eb7bb4-638e-4ad0-8247-16bb7498ad6602bb33dc-2df9-46c8-81a4-3aa313b90e27
-{3554edc8-f1cb-4fd4-a9f3-292679e3844e}{a421c8ff-958b-44bc-bb1b-207c86758637}
-{fc7e8054-df69-4a59-bbd4-c8fe85789d9e}
-1.0.0.0
-CellAnalyzerOfficeAddin
-_layouts/15/

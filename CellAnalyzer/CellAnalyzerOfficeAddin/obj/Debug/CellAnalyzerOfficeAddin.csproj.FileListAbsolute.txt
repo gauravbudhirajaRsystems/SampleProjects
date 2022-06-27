@@ -1,4 +1,0 @@
-D:\CellAnalyzer\CellAnalyzerOfficeAddin\obj\Debug\CellAnalyzerOfficeAddin.csproj.AssemblyReference.cache
-D:\CellAnalyzer\CellAnalyzerOfficeAddin\obj\Debug\CellAnalyzerOfficeAddin.csproj.CoreCompileInputs.cache
-D:\Git Projects\SampleProjects\CellAnalyzer\CellAnalyzerOfficeAddin\obj\Debug\CellAnalyzerOfficeAddin.csproj.AssemblyReference.cache
-D:\Git Projects\SampleProjects\CellAnalyzer\CellAnalyzerOfficeAddin\obj\Debug\CellAnalyzerOfficeAddin.csproj.CoreCompileInputs.cache
