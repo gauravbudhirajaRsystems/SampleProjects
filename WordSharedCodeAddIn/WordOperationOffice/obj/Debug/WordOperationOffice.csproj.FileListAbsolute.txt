@@ -1,0 +1,2 @@
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordOperationOffice\obj\Debug\WordOperationOffice.csproj.AssemblyReference.cache
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordOperationOffice\obj\Debug\WordOperationOffice.csproj.CoreCompileInputs.cache

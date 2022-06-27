@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Git Projects\\SampleProjects\\WordSharedCodeAddIn\\WordAnalyzerRestApi\\WordAnalyzerRestApi.csproj": {}
+  },
+  "projects": {
+    "D:\\Git Projects\\SampleProjects\\WordSharedCodeAddIn\\WordAnalyzerRestApi\\WordAnalyzerRestApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Git Projects\\SampleProjects\\WordSharedCodeAddIn\\WordAnalyzerRestApi\\WordAnalyzerRestApi.csproj",
+        "projectName": "WordAnalyzerRestApi",
+        "projectPath": "D:\\Git Projects\\SampleProjects\\WordSharedCodeAddIn\\WordAnalyzerRestApi\\WordAnalyzerRestApi.csproj",
+        "packagesPath": "C:\\Users\\gaurav\\.nuget\\packages\\",
+        "outputPath": "D:\\Git Projects\\SampleProjects\\WordSharedCodeAddIn\\WordAnalyzerRestApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gaurav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Git Projects\\SampleProjects\\WordSharedCodeAddIn\\WordSharedCodeLibrary\\WordSharedCodeLibrary.csproj": {
+                "projectPath": "D:\\Git Projects\\SampleProjects\\WordSharedCodeAddIn\\WordSharedCodeLibrary\\WordSharedCodeLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Git Projects\\SampleProjects\\WordSharedCodeAddIn\\WordSharedCodeLibrary\\WordSharedCodeLibrary.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Git Projects\\SampleProjects\\WordSharedCodeAddIn\\WordSharedCodeLibrary\\WordSharedCodeLibrary.csproj",
+        "projectName": "WordSharedCodeLibrary",
+        "projectPath": "D:\\Git Projects\\SampleProjects\\WordSharedCodeAddIn\\WordSharedCodeLibrary\\WordSharedCodeLibrary.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

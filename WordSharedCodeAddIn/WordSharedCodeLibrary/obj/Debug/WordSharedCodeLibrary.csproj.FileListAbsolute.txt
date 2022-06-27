@@ -1,0 +1,6 @@
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordSharedCodeLibrary\bin\Debug\WordSharedCodeLibrary.dll
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordSharedCodeLibrary\bin\Debug\WordSharedCodeLibrary.pdb
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordSharedCodeLibrary\obj\Debug\WordSharedCodeLibrary.csproj.AssemblyReference.cache
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordSharedCodeLibrary\obj\Debug\WordSharedCodeLibrary.csproj.CoreCompileInputs.cache
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordSharedCodeLibrary\obj\Debug\WordSharedCodeLibrary.dll
+D:\Git Projects\SampleProjects\WordSharedCodeAddIn\WordSharedCodeLibrary\obj\Debug\WordSharedCodeLibrary.pdb

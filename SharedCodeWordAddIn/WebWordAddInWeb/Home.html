@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Word Add-In with Commands Sample</title>
+
+    <script src="Scripts/jquery-3.6.0.js" type="text/javascript"></script>
+    <!--<script src="Scripts/MessageBanner.js" type="text/javascript"></script>-->
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <!-- To enable offline debugging using a local reference to Office.js, use:  -->
+    <!--<script src="Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>
+    <script src="Scripts/Office/1/office.js" type="text/javascript"></script>-->
+
+    <script src="Home.js" type="text/javascript"></script>
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <!--<link href="../Content/Button.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/MessageBanner.css" rel="stylesheet" type="text/css" />-->
+
+
+    <!-- For Office UI Fabric Core, go to https://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.0/css/fabric.min.css">
+    <!-- To enable the offline use of Office UI Fabric Core, use: -->
+    <!--<llink rel="stylesheet" href="../Content/fabric.min.css">-->
+</head>
+
+<!-- Office UI Fabric JS and it's components are no longer actively supported. Please see https://aka.ms/PnP-OfficeFabricReact for recommended Patterns and Practices -->
+<!-- <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css"> -->
+
+<body class="ms-Fabric" dir="ltr">
+
+    <table style="width:100%">
+        <tr>
+            <td style="width:40%"><button id="btnShowUnicode">Show Unicode</button></td>
+            <td style="width:60%"><div id="txtUnicodeResult" style="height:300px; width:300px; overflow-y:scroll"></div></td>
+        </tr>
+        <tr><td colspan="2" style="height:50px"></td></tr>
+        <tr>
+            <td style="width:40%"><button id="btnShowCharCount">Show Char Count</button></td>
+            <td style="width:60%"><div id="txtCharCountResult" style="height: 300px; width: 300px; overflow-y: scroll"></div></td>
+        </tr>
+        <tr><td colspan="2" style="height:50px"></td></tr>
+        <tr>
+            <td style="width:40%"><button id="btnShowWordCount">Show Word Count</button></td>
+            <td style="width:60%"><div id="txtWordCountResult" style="height: 200px; width: 300px; overflow-y: scroll"></div></td>
+        </tr>
+        <tr><td colspan="2" style="height:50px"></td></tr>
+        <tr>
+            <td colspan="2"><button id="btnSendBody">Send Body</button></td>
+        </tr>
+
+    </table>
+    <br />
+    <div id="content-main">
+        <div class="padding">
+            <p>Choose the buttons below to add boilerplate text to the document by using the Word JavaScript API.</p>
+            <br />
+            <h3>Try it out</h3>
+            <table>
+                <tr>
+                    <td><button class="ms-Button" id="btnAddParagraph">Add Paragraph</button></td>
+                    <td><button class="ms-Button" id="btnAlignTextRight">Text Align Right</button></td>
+                </tr>
+                <tr><td colspan="2" style="height:50px"></td></tr>
+                <tr>
+                    <td><button class="ms-Button" id="btnApplyInBuildStyle">Apply Inbuild Style (Emphasis)</button></td>
+                    <td><button class="ms-Button" id="btnChangeFont">Change Second Paragraph Font</button></td>
+                </tr>
+                <tr><td colspan="2" style="height:50px"></td></tr>
+                <tr>
+                    <td><button class="ms-Button" id="btnInsertAbbrevation">Insert Abbreviation</button></td>
+                    <td><button class="ms-Button" id="btnAddVersionInfo">Add Version Info</button></td>
+                </tr>
+                <tr><td colspan="2" style="height:50px"></td></tr>
+                <tr>
+                    <td><button class="ms-Button" id="btnReplaceText">Replace Text</button></td>
+                    <td><button class="ms-Button" id="btnAddImage">Insert Image</button></td>
+                </tr>
+                <tr><td colspan="2" style="height:50px"></td></tr>
+                <tr>
+                    <td><button class="ms-Button" id="btnAddHtml">Insert HTML</button></td>
+                    <td><button class="ms-Button" id="btnAddTable">Insert Table</button></td>
+                </tr>
+                <tr><td colspan="2" style="height:50px"></td></tr>
+                <tr>
+                    <td><button class="ms-Button" id="btnCreateContentControl">Create Content Control</button></td>
+                    <td><button class="ms-Button" id="btnReplaceContentControl">Rename Service</button></td>
+                </tr>
+            </table>
+            <br /><br />
+            <table id="tbl2016" style="display:none;">
+                <tr>
+                    <td><button class="ms-Button" id="btnGetHtml">Get Html</button></td>
+                    <td><button class="ms-Button" id="btnBodyClear">Clear Body Content</button></td>
+                </tr>
+                <tr><td colspan="2" style="height:50px"></td></tr>
+                <tr>
+                    <td><button class="ms-Button" id="btnGetFontDetails">Get Font Details</button></td>
+                    <td><button class="ms-Button" id="btnGetOOXml">Get Body OOXML </button></td>
+                </tr>
+                <tr><td colspan="2" style="height:50px"></td></tr>
+                <tr>
+                    <td><button class="ms-Button" id="btnInsertBreak">Insert Break</button></td>
+                    <td><button class="ms-Button" id="btnAddContentControl">Add Content Control </button></td>
+                </tr>
+                <tr><td colspan="2" style="height:50px"></td></tr>
+                <tr>
+                    <td><button class="ms-Button" id="btnInsertFile">Insert File </button></td>
+                    <td><button class="ms-Button" id="btnInsertHtml">Insert Html </button></td>
+                </tr>
+                <tr><td colspan="2" style="height:50px"></td></tr>
+                <tr>
+                    <td><button class="ms-Button" id="btnInsertOOXML">Insert OOXML </button></td>
+                    <td><button class="ms-Button" id="btnInsertParagraph">Insert Paragraph </button></td>
+                </tr>
+                <tr><td colspan="2" style="height:50px"></td></tr>
+                <tr>
+                    <td><button class="ms-Button" id="btnInsertText">Insert Text </button></td>
+                    <td><button class="ms-Button" id="btnSearchString">Search String (Office) </button></td>
+                </tr>
+                <tr><td colspan="2" style="height:50px"></td></tr>
+                <tr>
+                    <td><button class="ms-Button" id="btnSelectBodyText">Select Body Text </button></td>
+                    <td><button class="ms-Button" id="btnGetBodyText">Get Body Text </button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div id="OfficeVersion" />
+
+</body>
+</html>

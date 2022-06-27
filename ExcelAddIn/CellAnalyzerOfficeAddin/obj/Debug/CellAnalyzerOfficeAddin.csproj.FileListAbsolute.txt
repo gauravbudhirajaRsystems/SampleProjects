@@ -1,0 +1,4 @@
+C:\Users\Gaurav Budhiraja\source\repos\ExcelAddIn\CellAnalyzerOfficeAddin\obj\Debug\CellAnalyzerOfficeAddin.csproj.AssemblyReference.cache
+C:\Users\Gaurav Budhiraja\source\repos\ExcelAddIn\CellAnalyzerOfficeAddin\obj\Debug\CellAnalyzerOfficeAddin.csproj.CoreCompileInputs.cache
+D:\Git Projects\SampleProjects\ExcelAddIn\CellAnalyzerOfficeAddin\obj\Debug\CellAnalyzerOfficeAddin.csproj.AssemblyReference.cache
+D:\Git Projects\SampleProjects\ExcelAddIn\CellAnalyzerOfficeAddin\obj\Debug\CellAnalyzerOfficeAddin.csproj.CoreCompileInputs.cache
