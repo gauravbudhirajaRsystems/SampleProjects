@@ -1,2 +1,0 @@
-bin\Debug\OfficeAppManifests\CellAnalyzerOfficeAddinManifest.xml
-D:\CellAnalyzer\CellAnalyzerOfficeAddin\bin\Debug\CellAnalyzerOfficeAddin.debugapp

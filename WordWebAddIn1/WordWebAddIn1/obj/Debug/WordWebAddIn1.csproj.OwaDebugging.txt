@@ -1,7 +1,0 @@
-False
-ebfd410a-7ab4-4d17-93d7-f5b06b99a4e57e886dca-e97a-461e-9852-0a6e40651c19
-{e2997860-f109-4c3c-bd90-3456ccdc8242}{d9bffd88-31fd-4c5b-9c73-7c977b0d7892}
-{3b68f1ac-ef8a-4ea0-89a7-5bf93989b524}
-1.0.0.0
-WordWebAddIn1
-_layouts/15/

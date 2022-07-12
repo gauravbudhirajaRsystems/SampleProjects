@@ -1,2 +1,0 @@
-bin\Debug\OfficeAppManifests\WordWebAddInCommonManifest.xml
-D:\Git Projects\SampleProjects\WordWebAddInCommon\WordWebAddInCommon\bin\Debug\WordWebAddInCommon.debugapp

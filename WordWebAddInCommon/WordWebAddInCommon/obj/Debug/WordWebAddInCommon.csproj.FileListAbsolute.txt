@@ -1,2 +1,0 @@
-D:\Git Projects\SampleProjects\WordWebAddInCommon\WordWebAddInCommon\obj\Debug\WordWebAddInCommon.csproj.AssemblyReference.cache
-D:\Git Projects\SampleProjects\WordWebAddInCommon\WordWebAddInCommon\obj\Debug\WordWebAddInCommon.csproj.CoreCompileInputs.cache
